@@ -50,5 +50,49 @@
         border: 2px solid #FFFFFF;
         border-radius: 40px;
         padding: 10px 18px;
+        transition: all 0.3s ease 0s;
+        &:hover {
+            background-color: #ffffff70;
+            transition: all 0.3s ease 0s;
+        }
+    }
+    
+}
+.header__logo-none{
+    font-size: 20px;
+    line-height: calc(24 / 20 * 100%);
+    color: #FFFFFF;
+    margin-bottom: 26px;
+    display: none;
+}
+@media (max-width: 991.98px){
+    .menu {
+        margin-right: 0px;
+    }
+}
+@media (max-width: 767.98px) {
+    .header {
+    
+        &__inner {
+            display: flex;
+            justify-content: center;
+            min-height: 116px;
+            align-items: center;
+            flex-wrap: wrap-reverse;
+        }
+    
+        &__logo {
+            display: none;
+        }
+    
+    }
+    
+
+    .header__logo-none{
+        font-size: 20px;
+        line-height: calc(24 / 20 * 100%);
+        color: #FFFFFF;
+        margin-bottom: 26px;
+        display: block;
     }
 }

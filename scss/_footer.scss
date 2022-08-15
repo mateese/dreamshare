@@ -1,0 +1,146 @@
+
+.footer {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    border-top: #FF4E50 solid 2px;
+
+    &__inner {
+        margin-top: 38px;
+    }
+
+    &__info {
+    }
+
+    &__made-by {
+        margin-left: 100px;
+    }
+
+    &__made-by-title {
+        font-family: Montserrat-Bold;
+        color: #CCCCCC;
+        font-size: 10px;
+        line-height: calc(12 / 10 * 100%);
+        text-align: right;
+        margin-bottom: 7px;
+    }
+
+    &__made-by-logo {
+    }
+}
+
+.info {
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__dream {
+        font-size: 16px;
+        line-height: calc(20 / 16 * 100%);
+        color: #FF4E50;
+        font-family: Montserrat-Regular;
+    }
+
+    &__company {
+    }
+
+    &__company-title {
+        font-size: 14px;
+        line-height: calc(17 / 14 * 100%);
+        color: #444444;
+        font-family: Montserrat-Bold;
+        margin-bottom: 20px;
+    }
+
+    &__company-menu {
+    }
+
+    &__company-item {
+        font-size: 14px;
+        font-family: Roboto-Light;
+        a {
+            color: #999999;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__company-item + &__company-item {
+        margin-top: 14px;
+    }
+    &__company-link {
+        
+    }
+
+    &__partners {
+        font-size: 14px;
+        line-height: calc(17 / 14 * 100%);
+        color: #444444;
+        font-family: Montserrat-Bold;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 767.98px){
+    .footer {
+        margin-top: 40px;
+    
+        &__inner {
+            margin-top: 20px;
+            text-align: center;
+        }
+        &__made-by-title {
+            text-align: center;
+        }
+        &__made-by {
+            margin-left: 0px;
+        }
+    }
+    
+    .info {
+    
+        &__row {
+            display: block;
+        }   
+    
+        &__dream {
+            margin-bottom: 15px;
+        }
+        &__company-title {
+            font-size: 14px;
+            line-height: calc(17 / 14 * 100%);
+            color: #444444;
+            font-family: Montserrat-Bold;
+            margin-bottom: 13px;
+        }
+        &__company-menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 220px;
+            margin: 0px auto;
+            align-items: center;
+        }
+    
+        &__company-item {
+            font-size: 14px;
+            font-family: Roboto-Light;
+            a {
+                color: #999999;
+            }
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &__company-item + &__company-item {
+            margin-top: 0px;
+            margin-left: 10px;
+            line-height: 186%;
+        }
+        &__partners {
+            margin-bottom: 13px;
+            margin-top: 13px;
+        }
+    }
+}
