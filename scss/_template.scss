@@ -1,0 +1,29 @@
+// @extend %...; - connection
+
+%h1_text {
+    font-size: 52px;
+    line-height: 63px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Montserrat-Bold;
+}
+
+// template for titles
+%titles {
+    font-size: 26px;
+    line-height: calc(32 / 26 * 100%);
+    text-align: center;
+    color: #444444;
+    font-family: Montserrat-Bold;
+}
+
+
+%buttons-link {
+    background: #FF4E50;
+    border-radius: 40px;
+    padding: 12px 19px;
+    font-size: 14px;
+    line-height: calc(17 / 14 * 100%);
+    color: #FFFFFF;
+    font-family: Montserrat-Bold;
+}

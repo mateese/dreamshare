@@ -1,0 +1,117 @@
+@import "_imports";
+
+// default settings
+body{
+    height: 100%;
+    font-family: Montserrat-Bold;
+    background-color: #FFFFFF;
+}
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    max-width: 960px;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+.main {
+    flex: 1 1 auto;
+}
+
+// dream block (main)
+.dream {
+    background: url('../img/background.jpg') center/cover no-repeat;
+
+    &__inner {
+        position: relative;
+        z-index: 2;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__title {
+        text-align: center;
+        font-size: 52px;
+        line-height: calc(63 / 52 * 100%);
+        color: $main_color;
+    }
+    &__subtitle {
+        font-size: 24px;
+        line-height: calc(24 / 24 * 100%);
+        color: #F7F3F2;
+        font-family: Roboto-Light;
+        margin-top: 28px;
+        text-align: center;
+    }
+    &__button {
+        margin-top: 33px;
+
+        &_link {
+            @extend %buttons-link; 
+        }
+    }
+}
+
+
+.works {
+    margin-top: 90px;
+    &__inner {
+    }
+
+    &__title {
+        @extend %titles;
+    }
+
+    &__body {
+        margin-top: 35px;
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px -10px;
+    }
+
+    &__column {
+        flex: 0 1 33.3333%;
+        padding: 0px 10px;
+        
+    }
+
+    &__item {
+        
+    }
+    &__item_body{
+        position: absolute;
+        z-index: 50;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: end;
+    }
+    &__item-step {
+        position: relative;
+    }
+    &__item-title {
+        position: relative;
+    }
+    &__item-subtitle {
+        position: relative;
+    }
+    &__item-image {
+        position: relative; 
+
+    }
+    // &__item-image img{
+    //     max-width: 100%;
+    //     min-height: 400px;
+    //     object-fit: cover;
+    // }
+}
+
