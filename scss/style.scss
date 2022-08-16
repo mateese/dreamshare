@@ -65,30 +65,24 @@ body{
         &__subtitle {
             font-size: 18px;
             margin-top: 13px;
-        }
-        &__button {
-            margin-top: 33px;
-            &_link {
-                @extend %buttons-link;
-                padding: 12px 35px;
-            }
+                
         }
     }
 }
-@media (max-width: 400px) {
+@media (max-width: 400px){
     .dream {
         &__button {
             margin-top: 33px;
+            width: 100%;
             
             &_link {
-                // padding: 12px 35px;
                 display: flex;
                 flex: 1 1 auto;
+                justify-content: center;
             }
         }
     }
 }
-
 // work block (...)
 .works {
     margin-top: 90px;
@@ -358,57 +352,91 @@ body{
 }
 
 // catalog block (...)
+
 .catalog {
     margin-top: 100px;
-    
     &__inner {
-
     }
 
     &__title {
         @extend %titles;
-        margin-bottom: 35px;
     }
-
-    &__header {
-        display: flex;
-        margin: 0px -10px;
-        img{
-            max-width: 100%;
-            padding: 0px 10px;
-        }
-    }
-
-    &__header-img {
-    }
-
-    &__main {
-        display: flex;
-        margin: 0px -10px;
-        img{
-            max-width: 100%;
-            padding: 0px 10px;
-        }
-    }
-
-    &__footer {
-        display: flex;
-        margin: 0px -10px;
-        img{
-            max-width: 100%;
-            padding: 0px 10px;
-        }
-    }
-}
-
-.catatog {
-
     &__body {
+        margin-top: 35px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 310px 310px 310px;
+        gap: 20px;
+    }
+    &__img01 {
+        background: url('../img/catalog/01.jpg') center/cover no-repeat;
+    }
+    &__img02 {
+        background: url('../img/catalog/02.jpg') center/cover no-repeat;
+    }
+    &__img03 {
+        background: url('../img/catalog/03.jpg') center/cover no-repeat;
+    }
+    &__img04 {
+        background: url('../img/catalog/04.jpg') center/cover no-repeat;
+    }
+    &__img05 {
+        background: url('../img/catalog/05.jpg') center/cover no-repeat;
+    }
+    &__img06 {
+        background: url('../img/catalog/06.jpg') center/cover no-repeat;
+    }
+    &__img07 {
+        background: url('../img/catalog/07.jpg') center/cover no-repeat;
+    }
+    &__img-big, &__img-big-small{
+        grid-column: span 2;
+    }
+    &__text {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-size: 22px;
+        line-height: calc(27 / 22 * 100%);
+        color: #FFFFFF;
+        text-align: center;
     }
 }
+@media (max-width: 767.98px){
+    .catalog {
+        margin-top: 35px;
+        &__body {
+            margin-top: 35px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 310px 310px 310px 310px ;
+            gap: 10px;
+        }
+        &__img-big{
+            grid-column: span 2;
+        }
+        &__img-big-small{
+            grid-column: span 1;
+        }
+    }
+}
+@media (max-width: 575.98px) {
+    .catalog {
+        &__body {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(7, 120px);
+        }
+        &__img-big{
+            grid-column: span 1;
+        }
+        &__img-big-small{
+            grid-column: span 1;
+        }
+    }
+}
+    
+
 
 // form block (...)
 .form {
